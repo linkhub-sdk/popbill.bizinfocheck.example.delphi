@@ -1,9 +1,0 @@
-[submodule "popbill.base.delphi"]
-	path = popbill.base.delphi
-	url = https://github.com/linkhub-sdk/popbill.base.delphi.git
-[submodule "linkhub.auth.delphi"]
-	path = linkhub.auth.delphi
-	url = https://github.com/linkhub-sdk/linkhub.auth.delphi.git
-[submodule "popbill.bizinfocheck.delphi"]
-	path = popbill.bizinfocheck.delphi
-	url = https://github.com/linkhub-sdk/popbill.bizinfocheck.delphi.git

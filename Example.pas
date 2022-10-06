@@ -188,9 +188,10 @@ begin
                 tmp := tmp + 'closeDownState (ÈÞÆó¾÷»óÅÂ) : ' + bizCheckInfo.closeDownState + #13;
                 tmp := tmp + 'closeDownStateDate (ÈÞÆó¾÷ÀÏÀÚ) : ' + bizCheckInfo.closeDownStateDate + #13#13;
 
-                bizCheckInfo.Free;
                 ShowMessage(tmp);
         end;
+        
+        bizCheckInfo.Free;
 end;
 
 procedure TfrmExample.btnJoinMemberClick(Sender: TObject);
