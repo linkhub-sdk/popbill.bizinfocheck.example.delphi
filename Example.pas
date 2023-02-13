@@ -1,7 +1,7 @@
 {******************************************************************************}
 { 팝빌 기업정보조회 API Delphi SDK Example
 {
-{ - 델파이 SDK 적용방법 안내 : https://docs.popbill.com/bizinfocheck/tutorial/delphi
+{ - 델파이 SDK 적용방법 안내 : https://developers.popbill.com/guide/bizinfocheck/delphi/getting-started/tutorial
 { - 업데이트 일자 : 2022-10-05
 { - 연동 기술지원 연락처 : 1600-9854
 { - 연동 기술지원 이메일 : code@linkhubcorp.com
@@ -143,7 +143,7 @@ var
 begin
         {**********************************************************************}
         { 사업자번호 1건에 대한 기업정보를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#CheckBizInfo
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/check#CheckBizInfo
         {**********************************************************************}
 
         try
@@ -201,7 +201,7 @@ var
 begin
         {**********************************************************************}
         { 사용자를 연동회원으로 가입처리합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#JoinMember
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#JoinMember
         {**********************************************************************}
 
         // 링크아이디
@@ -264,7 +264,7 @@ var
 begin
         {**********************************************************************}
         { 사업자번호를 조회하여 연동회원 가입여부를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#CheckIsMember
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#CheckIsMember
         {**********************************************************************}
 
         try
@@ -291,7 +291,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원의 잔여포인트를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetBalance
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetBalance
         {**********************************************************************}
         
         try
@@ -319,7 +319,7 @@ var
 begin
         {**********************************************************************}
         { 기업정보 조회시 과금되는 포인트 단가를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetUnitCost
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetUnitCost
         {**********************************************************************}
 
         try
@@ -349,7 +349,7 @@ begin
         {**********************************************************************}
         { 팝빌 사이트에 로그인 상태로 접근할 수 있는 페이지의 팝업 URL을 반환합니다.
         { - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetAccessURL
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#GetAccessURL
         {**********************************************************************}
 
         try
@@ -378,7 +378,7 @@ begin
         {**********************************************************************}
         { 연동회원 포인트 충전을 위한 페이지의 팝업 URL을 반환합니다.
         { - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetChargeURL
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetChargeURL
         {**********************************************************************}
         
         try
@@ -407,7 +407,7 @@ var
 begin
         {**********************************************************************}
         { 파트너의 잔여포인트를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetPartnerBalance
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetPartnerBalance
         {**********************************************************************}
         
         try
@@ -435,7 +435,7 @@ var
 begin
         {**********************************************************************}
         { 사용하고자 하는 아이디의 중복여부를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#CheckID
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#CheckID
         {**********************************************************************}
         
         try
@@ -463,7 +463,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원 사업자번호에 담당자(팝빌 로그인 계정)를 추가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#RegistContact
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#RegistContact
         {**********************************************************************}
 
         // [필수] 담당자 아이디 (6자 이상 50자 미만)
@@ -511,7 +511,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원 사업자번호에 등록된 담당자(팝빌 로그인 계정) 목록을 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#ListContact
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#ListContact
         {**********************************************************************}
 
         try
@@ -556,7 +556,7 @@ begin
 
         {**********************************************************************}
         { 연동회원 사업자번호에 등록된 담당자(팝빌 로그인 계정) 정보를 수정합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#UpdateContact
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#UpdateContact
         {**********************************************************************}
 
         contactInfo := TContactInfo.Create;
@@ -601,7 +601,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원의 회사정보를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetCorpInfo
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#GetCorpInfo
         {**********************************************************************}
 
         try
@@ -636,7 +636,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원의 회사정보를 수정합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#UpdateCorpInfo
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#UpdateCorpInfo
         {**********************************************************************}
 
         corpInfo := TCorpInfo.Create;
@@ -682,7 +682,7 @@ var
 begin
         {**********************************************************************}
         { 팝빌 기업정보조회 API 서비스 과금정보를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetChargeInfo
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetChargeInfo
         {**********************************************************************}
 
         try
@@ -716,7 +716,7 @@ begin
         {**********************************************************************}
         { 파트너 포인트 충전을 위한 페이지의 팝업 URL을 반환합니다.
         { - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetPartnerURL
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetPartnerURL
         {**********************************************************************}
         
         try
@@ -745,7 +745,7 @@ begin
         {**********************************************************************}
         { 연동회원 포인트 결제내역 확인을 위한 페이지의 팝업 URL을 반환합니다.
         { - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetPaymentURL
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetPaymentURL
         {**********************************************************************}
         
         try
@@ -774,7 +774,7 @@ begin
         {**********************************************************************}
         { 연동회원 포인트 사용내역 확인을 위한 페이지의 팝업 URL을 반환합니다.
         { - 반환되는 URL은 보안 정책상 30초 동안 유효하며, 시간을 초과한 후에는 해당 URL을 통한 페이지 접근이 불가합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetUseHistoryURL
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/point#GetUseHistoryURL
         {**********************************************************************}
 
         try
@@ -804,7 +804,7 @@ var
 begin
         {**********************************************************************}
         { 연동회원 사업자번호에 등록된 담당자(팝빌 로그인 계정) 정보를 확인합니다.
-        { - https://docs.popbill.com/bizinfocheck/delphi/api#GetContactInfo
+        { - https://developers.popbill.com/reference/bizinfocheck/delphi/api/member#GetContactInfo
         {**********************************************************************}
 
         contactID := 'testkorea';
